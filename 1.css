@@ -1,0 +1,198 @@
+:root{
+    --color-white: #fff;
+    --color-green-1:#31af36;
+    --color-gray-1: #cfd8dc;
+    --color-dark-gray:#323232;
+}
+@keyframes anim1-1{
+    form{
+        transform:rotate(0deg) scale(1,1) ;
+    }
+    to{
+        transform: rotate(-1deg) scale(1.02,1.04);
+    }
+}
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+.container_W_Margin{
+    margin-left: 100px;
+    margin-left: 100px;
+}
+body{
+    margin: 0;
+    height: 100vh;
+}
+/* ------------------------ Navigation-------------------------- */
+
+.headerContainer{
+    /* 1:agar width ro 100 vw bezaram item3 chera az safhe mizane biroon? */
+    width: 90vw;
+    position: fixed;
+    display:flex;
+    justify-content: space-between;
+    /* margin-top: 2.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0; */
+    margin: 2.5rem 2.5rem 0;
+    z-index: 10;
+
+}
+
+.navHeaderMenu ul{
+    list-style: none;
+    display:flex;
+  
+}
+.navHeaderMenu ul li a{
+    margin: 0;
+    padding: 10px 20px;
+    color:var(--color-white) ;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    font-size: medium;
+    /* برای کم کردن وزن فوت چه کنیم؟ */
+    /* font-weight: lighter; */
+    transition: all 300ms;
+}
+.navHeaderMenu ul li:hover a{
+    color:var(--color-green-1) ;
+    
+}
+.navHeaderFontaowsome1 ul{
+    list-style: none;
+    display:flex;
+}
+.navHeaderFontaowsome1 ul li a{
+    margin: 0;
+    padding: 10px;
+    /* 3.inja chejoori ba var mishod transparencye rang ro taghiir dad? */
+    color:#cfd8dc98 ;
+    font-size: medium;
+    transition:all 1s;
+
+}
+.navHeaderFontaowsome1 ul li:hover a{
+    color: var(--color-white);
+    
+}
+.navHeaderFontaowsome2 a{
+    margin: 0;
+    padding: 10px;
+    color:var(--color-white);
+    
+    /* font-weight: 100; */
+    /* 4:chera font-weight: tasiri nadare? */
+    }
+.logoHeader{
+    /* 2: chera inja javab nemide? */
+    /* margin-right: auto; */  
+    width:9.5rem;
+}
+
+
+/* ------------------------------box1------------------------------- */
+.row1{
+    position: relative;
+    height: 100vh;
+    background-color: #000;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -3;
+    text-align: center;
+}
+
+.row1 div h2{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:var(--color-white);
+    font-size :4rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px #00000073;
+}
+
+.hr1{
+    width: 7%;
+    border: 1.9px solid #fff;
+    
+
+}
+.row1 div p{
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    max-width: 55%;
+    margin: 2rem auto 0;
+}
+
+.row1-1{
+    position:absolute;
+    background:url(images/bg-bunner-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .7;
+    animation-name: anim1-1;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    z-index: -2;
+
+}
+.formBox{
+    width: 80vw;
+    height: 25vh;
+    padding:1rem;
+    /* height: 25vh; */
+    background-color: var(--color-white);
+    /* border: 1px solid black; */
+    margin-top: -87px;
+    border-radius: 8px;
+    box-shadow: 0  20px 30px #3333338c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-grow: 1; */
+    /* flex-basis: 10vw; */
+}
+.formBox div {
+    margin-right: 10px;
+   
+}
+.row2 lable,
+.row2 button{
+display: block;
+margin-bottom: 1rem;
+font-size: x-small;
+
+}
+.row2 input{
+    border: none;
+    outline: none;
+    font-size: medium;
+     
+    /* height: 2rem; */
+    /* width: 100%; */
+}
+
+.lable4 lable,
+.lable5 button{
+  white-space: nowrap;
+}
+.lable5 input{
+  padding: 13px;
+  background-color:var(--color-dark-gray);
+  color: var(--color-white);
+  font-size: small;
+  transition: all 200ms;
+}
+.lable5 input :hover{
+background-color: var(--color-green-1);
+cursor: pointer;
+}
